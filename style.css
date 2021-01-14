@@ -19,6 +19,7 @@ main {
 	padding: 4rem;
 	border-radius: 2rem;
 	position: relative;
+	box-shadow: 0.5rem 0.5rem 2rem #000;
 	background: linear-gradient(10deg, #f4f, #4ff);
 	cursor: url("images/cursor.png"), default;
 	animation: 1000ms ease-out 1 fadeIn;
