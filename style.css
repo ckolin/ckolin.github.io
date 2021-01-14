@@ -20,7 +20,7 @@ main {
 	border-radius: 2rem;
 	position: relative;
 	background: linear-gradient(10deg, #f4f, #4ff);
-	cursor: url("cursor.png"), default;
+	cursor: url("images/cursor.png"), default;
 	animation: 1000ms ease-out 1 fadeIn;
 }
 
@@ -50,7 +50,7 @@ main:before {
 main a {
 	display: inline-block;
 	text-decoration: none;
-	cursor: url("pointer.png") 4 0, pointer;
+	cursor: url("images/pointer.png") 4 0, pointer;
 	padding: 0.5rem;
 }
 
