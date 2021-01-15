@@ -70,7 +70,7 @@ main a img {
 	width: 5rem;
 	image-rendering: crisp-edges;
 	image-rendering: pixelated;
-	rotate: -3deg;
+	transform: rotate(-3deg);
 }
 
 main a span {
@@ -78,5 +78,5 @@ main a span {
 	padding: 0.4rem;
 	color: #000;
 	background: #fff;
-	rotate: -1deg;
+	transform: rotate(-1deg);
 }
