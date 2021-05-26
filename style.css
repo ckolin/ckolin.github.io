@@ -24,7 +24,7 @@ main {
 	position: relative;
 	box-shadow: 0.5rem 0.5rem 2rem #000;
 	background: linear-gradient(10deg, #f3f, #3ff);
-	cursor: url("images/cursor.png"), default;
+	cursor: url("assets/cursor.png"), default;
 	animation: 1000ms ease-out 1 fadeIn;
 }
 
@@ -58,7 +58,7 @@ main, main:before {
 main a {
 	display: inline-block;
 	text-decoration: none;
-	cursor: url("images/pointer.png") 4 0, pointer;
+	cursor: url("assets/pointer.png") 4 0, pointer;
 	padding: 1rem;
 }
 
