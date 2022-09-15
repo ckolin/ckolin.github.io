@@ -4,43 +4,84 @@
 }
 
 body, html {
-	margin: 0;
-	font-size: calc(1vmin + 10px);
+	margin: 1rem;	
 }
 
 body {
-	padding: 1rem;
+	padding: 2rem calc(50% - 25rem);
 	color: #fff;
 	background: #111;
-	text-align: center;
 	text-transform: uppercase;
 	font-family: "Press Start 2P", monospace;
+	font-size: 24px;
 }
 
-h1 {
+h1, h2 {
 	font-weight: normal;
 }
 
-main {
+h1 {
+	margin: 0 0 1rem 0;
+}
+
+h2 {
+	margin: 2rem 0 0 0;
+}
+
+h2:nth-of-type(1) {
+	margin: 0;
+}
+
+a {
 	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	cursor: url("assets/pointer.png") 4 0, pointer;
+	padding: 1rem;
+}
+
+a img {
+	width: 5rem;
+	image-rendering: crisp-edges;
+	image-rendering: pixelated;
+	transform: rotate(-1deg);
+}
+
+a:nth-of-type(2n) img {
+	transform: rotate(2deg);
+}
+
+a span {
+	display: block;
+	padding: 0.4rem;
+	color: #000;
+	background: #fff;
+	transform: rotate(1deg);
+}
+
+a:nth-of-type(2n+1) span {
+	transform: rotate(-2deg);
+}
+
+div {
 	padding: 4rem;
 	position: relative;
 	box-shadow: 0.5rem 0.5rem 2rem #000;
-	background: linear-gradient(10deg, #f3f, #3ff);
+	background: #55f;
 	cursor: url("assets/cursor.png"), default;
-	animation: 1000ms ease-out 1 fadeIn;
+	animation: 2s ease-out 1 fadeIn;
 }
 
 @keyframes fadeIn {
 	from {
-		filter: grayscale(100%);
+		opacity: 0;
 	}
 	to {
-		filter: none;
+		opacity: 1;
 	}
 }
 
-main:before {
+div:before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -54,32 +95,17 @@ main:before {
 	pointer-events: none;
 }
 
-main, main:before {
-	border-radius: 2rem;
+div, div:before {
+	border-radius: 0.8rem;
 }
 
-main a {
-	display: inline-block;
-	text-decoration: none;
-	cursor: url("assets/pointer.png") 4 0, pointer;
-	padding: 1rem;
-}
+@media screen and (max-width: 800px) {
+	body {
+		font-size: 16px;
+		text-align: center;
+	}
 
-main a.disabled {
-	opacity: 0.5;
-}
-
-main a img {
-	width: 5rem;
-	image-rendering: crisp-edges;
-	image-rendering: pixelated;
-	transform: rotate(-3deg);
-}
-
-main a span {
-	display: block;
-	padding: 0.4rem;
-	color: #000;
-	background: #fff;
-	transform: rotate(-1deg);
+	div {
+		padding: 1rem;
+	}
 }
