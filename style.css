@@ -63,7 +63,7 @@ a:nth-of-type(2n+1) span {
 	transform: rotate(-2deg);
 }
 
-div {
+main {
 	padding: 4rem;
 	position: relative;
 	box-shadow: 0.5rem 0.5rem 2rem #000;
@@ -81,7 +81,7 @@ div {
 	}
 }
 
-div:before {
+main:before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -95,7 +95,7 @@ div:before {
 	pointer-events: none;
 }
 
-div, div:before {
+main, main:before {
 	border-radius: 0.8rem;
 }
 
@@ -105,7 +105,7 @@ div, div:before {
 		text-align: center;
 	}
 
-	div {
+	main {
 		padding: 1rem;
 	}
 }
