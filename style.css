@@ -9,11 +9,11 @@ body, html {
 
 body {
 	padding: 2rem calc(50% - 25rem);
+	font-size: 18px;
+	font-family: "Press Start 2P", monospace;
+	text-transform: uppercase;
 	color: #fff;
 	background: #111;
-	text-transform: uppercase;
-	font-family: "Press Start 2P", monospace;
-	font-size: 18px;
 }
 
 h1, h2 {
@@ -34,17 +34,18 @@ h2:nth-of-type(1) {
 
 a {
 	display: inline-block;
+	width: min-content;
+	padding: 1rem;
 	text-decoration: none;
 	text-align: center;
 	cursor: url("assets/pointer.png") 4 0, pointer;
-	padding: 1rem;
 }
 
 a img {
 	width: 5rem;
+	transform: rotate(-1deg);
 	image-rendering: crisp-edges;
 	image-rendering: pixelated;
-	transform: rotate(-1deg);
 }
 
 a:nth-of-type(2n) img {
